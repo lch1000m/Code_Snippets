@@ -30,7 +30,6 @@ def psuedo_work(q):
 
 if __name__ == '__main__':
 
-
     q = Queue()  # mp queue for storing segmented df
 
     proc = Process(target=q_check_server, args=(q,))

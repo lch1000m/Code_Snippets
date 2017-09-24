@@ -13,11 +13,11 @@ from datetime import datetime as dt
 
 df = pd.DataFrame(
     {
-        'A':[1,2,3],
+        'A':[1,2,3.3],
         'B':[1.1,2.2,3.3],
-        'C':['2016-07-01','2016-07-02','2016-07-03'],
+        'C':['2016-07-01','2016-07-02',1.235],
         'D':['a',1,'b'],
-        'E':[dt(2017,7,1),dt(2017,7,2),dt(2017,7,3)],
+        'E':[dt(2017,7,1),dt(2017,7,2),'2016-07-03'],
     }
 )
 
@@ -66,7 +66,6 @@ def str_col_test():
     print(res)
 
 
-
 def time_col_test():
 
     time_type = [
@@ -75,7 +74,7 @@ def time_col_test():
 
     res = df['E'].dtypes in time_type
 
-    print(res)
+    # print(res)
 
 
 
@@ -84,4 +83,5 @@ if __name__ == '__main__':
     # int_col_test()
     # float_col_test()
     # str_col_test()
-    time_col_test()
+    # time_col_test()
+    other_test()

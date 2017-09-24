@@ -9,9 +9,19 @@ import pandas as pd
 import numpy as np
 
 
-df = pd.read_table(
-    'sample.txt',
-    sep='\t'
+dic = pd.DataFrame(
+    {
+        'ITEM':['A','B'],
+        'VALUES':[1.23, 'asdsd'],
+    }
+)
+
+
+df = pd.SparseDataFrame(
+    pd.read_csv(
+        'sample.txt',
+        sep='\t'
+    )
 )
 
 for i in range(10):
@@ -25,13 +35,12 @@ df_sparse = pd.SparseDataFrame(df)
 
 print(df_sparse.info())
 
-pivot = pd.pivot_table(
-    df_sparse,
-    index=['Name'],
-    columns=['Sub'],
-    values='Col1'
-)
 
-print(pivot.head())
+df_sparse['kkk'] = 111
 
-import pdb; pdb.set_trace()
+print(df_sparse.info())
+
+
+df_sparse = pd.merge(df_sparse, dic, on=['ITEM'])
+
+print(df_sparse.info())
