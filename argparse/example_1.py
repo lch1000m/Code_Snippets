@@ -5,7 +5,6 @@ reference
 #
 """
 
-
 import argparse
 
 parser = argparse.ArgumentParser(description='명령행 인자를 쉽게 설정합시다.')
