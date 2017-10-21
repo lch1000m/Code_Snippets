@@ -7,3 +7,4 @@ Pandas/pandas_iterrows_vs_indexing.py___jb_tmp___
 Pandas/sample.txt
 __pycache__/example.cpython-36.pyc
 *.log
+*.pyc

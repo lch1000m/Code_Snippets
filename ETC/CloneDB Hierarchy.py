@@ -9,7 +9,7 @@ class CloneDB(object):
         """
         pass
 
-    def save_to_mongodb(self):
+    def save_to_mongodb(self, dup_check=True):
         """
         save csv contents to mongodb
         """
@@ -31,3 +31,12 @@ class CloneDB_Manager(object):
         initialize CloneDB_Manager instance
         """
         pass
+
+
+# mongodb API for easy control
+
+def read_mongo():
+    """
+    API for read mongodb
+    """
+    pass
