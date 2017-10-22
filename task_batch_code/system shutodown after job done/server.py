@@ -35,4 +35,4 @@ if __name__ == '__main__':
     print('All pgms end! system exit!')
     print('System Shutdown!')
 
-    # os.system('shutdown -s -t 5')
+    # os.system('shutdown -s -f -t 5')
