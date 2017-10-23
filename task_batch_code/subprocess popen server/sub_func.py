@@ -3,6 +3,9 @@ import time
 
 
 def sub_server():
+    """
+    only server
+    """
 
     while True:
         print('sub_server work!')

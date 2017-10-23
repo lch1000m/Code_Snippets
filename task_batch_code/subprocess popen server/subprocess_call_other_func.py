@@ -18,4 +18,9 @@ if __name__ == '__main__':
     proc = Process(target=main)
     proc.start()
 
-    subprocess.Popen(['python','C:\Codes\Snippets\multiprocessing\subprocess\sub_func.py'])
+    subprocess.Popen(
+        [
+            'python',
+            r'C:\Codes\Snippets\task_batch_code\subprocess popen server\sub_func.py',
+        ]
+    )
