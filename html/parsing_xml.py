@@ -7,9 +7,17 @@ parser = ElementTree()
 
 parser.parse('output.html')
 
-parser.find('body/table').text = "contents changed!"
+res = parser.iter('body')
 
-parser.write('output.html')
+res = list(res.iter())
+
+print(res)
+
+
+
+# parser.find('body/table').text = "contents changed!"
+
+# parser.write('output.html')
 
 # # replace tag's attr
 # p = parser.find('body/p')
