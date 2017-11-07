@@ -1,5 +1,5 @@
-
 import functools
+
 
 class NiceDecorator(object):
     def __init__(self, param_foo='a', param_bar='b'):
@@ -19,6 +19,7 @@ class NiceDecorator(object):
             return result
 
         return my_logic
+
 
 NiceDecorator2 = NiceDecorator(param_foo='changed2!', param_bar='baaar2')
 

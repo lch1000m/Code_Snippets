@@ -3,31 +3,33 @@ import html
 
 from bs4 import BeautifulSoup
 
-content = open('output.html', 'r').read()
-soup = BeautifulSoup(content, 'lxml')
-
-tag = soup.find('script_here')
-
-
-res_string = ''
-
-for it in tag:
-    res_string += str(it)
-
-# print(res_string)
-
+# content = open('output.html', 'r').read()
+# soup = BeautifulSoup(content, 'lxml')
+#
+# tag = soup.find('script_here')
+#
+#
+# res_string = ''
+#
+# for it in tag:
+#     res_string += str(it)
+#
+# # print(res_string)
+#
 with open('sample.html','r') as file:
     content2 = file.read()
 
-soup2 = BeautifulSoup(content2, 'lxml')
-tag_selected = soup2.find('script_here')
+soup2 = BeautifulSoup(content2, 'html.parser')
+tag_selected = soup2.find('head.title')
 
-tag_selected.string = res_string
+print(tag_selected)
 
-rep = html.unescape(str(soup2))
-
-with open('sample.html', 'w') as file:
-    file.write(rep)
+# tag_selected.string = res_string
+#
+# rep = html.unescape(str(soup2))
+#
+# with open('sample.html', 'w') as file:
+#     file.write(rep)
 
 
 

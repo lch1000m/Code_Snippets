@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+
+<h1><a href="JavaScript:void(0)" onmouseover="this.style.color='red';" onmouseout="this.style.color='blue';">Hello</a>
+</h1>
+
+<h2><a href="JavaScript:void(0)" onclick="this.text='changed!';">Hello2</a></h2>
+
+<input type="text" id="randinput"
+       onchange="var dataEntered=document.getElementById('randinput').value; alert('User typed ' + dataEntered)">
+
+
+<p id="keyData">Key Data Here</p>
+
+<form action="#" id="sampForm">
+    <div>
+        <input type="text" id="charInput">
+    </div>
+
+    <div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </div>
+
+
+</form>
+<br>
+
+<button id="logoButton">Get Logo</button>
+
+<input type="text" id="mouseInput" size="30">
+<br>
+
+Mouse X: <input type="text" id="mouseX"><br>
+Mouse Y: <input type="text" id="mouseY"><br>
+
+<script>
+
+    function getChar(event) {
+        if (event.which == null) {
+            return String.fromCharCode(event.keyCode);
+        }
+        else if (event.which != 0 && event.charCode != 0) {
+            return String.fromCharCode(evemt.which);
+        }
+        else {
+            return null;
+        }
+    }
+
+</script>
+
+
+</body>
+</html>
