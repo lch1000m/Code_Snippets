@@ -10,5 +10,5 @@ for e in soup.find_all('elem'):
     if e.text not in ['1','2']:
         e.extract()
 
-with open('output.txt', 'w') as file:
+with open('output.xml', 'w') as file:
     file.write(str(soup))

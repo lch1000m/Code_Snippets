@@ -16,4 +16,4 @@ for sub in section:
             sub.remove(child)
 
 tree = et.ElementTree(root)
-tree.write('output.txt')
+tree.write('output.xml')
