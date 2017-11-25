@@ -1,0 +1,14 @@
+<note>
+  <info id="1st">
+    <name>Tove</name>
+    <addr>11</addr>
+    <addr>12</addr>
+    <addr>13</addr>
+  </info>
+  <info id="2nd">
+    <name>Jane</name>
+    <addr>21</addr>
+    <addr>22</addr>
+    <addr>23</addr>
+  </info>
+</note>
