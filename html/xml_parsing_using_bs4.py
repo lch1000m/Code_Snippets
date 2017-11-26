@@ -1,9 +1,7 @@
 
-import bs4
 from bs4 import BeautifulSoup
 
 xml = open('file.xml').read()
-
 soup = BeautifulSoup(xml, 'html.parser')
 
 for e in soup.find_all('elem'):
