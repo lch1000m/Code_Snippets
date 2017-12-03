@@ -16,7 +16,7 @@ from bs4 import BeautifulSoup
 #
 # # print(res_string)
 #
-with open('sample.html','r') as file:
+with open('psutil.html','r') as file:
     content2 = file.read()
 
 soup2 = BeautifulSoup(content2, 'html.parser')
@@ -28,7 +28,7 @@ print(tag_selected)
 #
 # rep = html.unescape(str(soup2))
 #
-# with open('sample.html', 'w') as file:
+# with open('psutil.html', 'w') as file:
 #     file.write(rep)
 
 

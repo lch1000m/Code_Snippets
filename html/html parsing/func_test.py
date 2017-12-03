@@ -11,7 +11,7 @@ replace_values = {
 
 
 
-res = write_replace_html_contents('sample.html', replace_values=replace_values, write_to='output.html')
+res = write_replace_html_contents('psutil.html', replace_values=replace_values, write_to='output.html')
 
 print(type(res))
 print(res)

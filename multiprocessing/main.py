@@ -18,7 +18,7 @@ if __name__ == '__main__':
                 proc = psutil.Process(pid=pid)
                 running_pgms += 1
             except:
-                pass
+                pass1
 
         if running_pgms == 0:
             break
