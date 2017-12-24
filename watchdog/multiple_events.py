@@ -1,4 +1,3 @@
-
 import time
 import os
 import shutil
@@ -6,19 +5,26 @@ import datetime
 from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 
+
 class TestEventHandler(PatternMatchingEventHandler):
+
     def __init__(self, *args, **kwargs):
         super(TestEventHandler, self).__init__(*args, **kwargs)
         self.last_created = None
+
+
     def on_created(self, event):
         path = event.src_path
         if path != self.last_created:
             print(str(datetime.datetime.now()) + " " + str(event))
             self.last_created = path
+
+
     def on_deleted(self, event):
         path = event.src_path
         if path == self.last_created:
             self.last_created = None
+
 
 if __name__ == '__main__':
 
