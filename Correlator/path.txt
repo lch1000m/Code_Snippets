@@ -1,0 +1,5 @@
+step	lot_wf	ppid	eqp	chb
+kz000000	A	A	a	1
+kz100000	A	A	b	2
+kz200000	B	B	a	3
+kz300000	B	B	b	4

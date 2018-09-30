@@ -1,0 +1,5 @@
+lot_wf	stepa	stepb
+0X1	a	a
+0X2	a	b
+0X3	a	a
+0X4	b	a

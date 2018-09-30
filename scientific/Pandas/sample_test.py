@@ -4,20 +4,20 @@ import pandas as pd, numpy as np
 from datetime import datetime as dt
 
 
-df = pd.DataFrame({
-    'A':[1,2,3],
-    'B':[1.1,2.2,3.3],
-    'C':['a','b','c'],
-    'D':[dt(2017,3,20),dt(2017,3,21),dt(2017,3,22)],
-})
+condition = {
+    'and':[
+        {
+            'stepA':['PPID',['ppid_a']],
+        },
+        {
+            'stepB':['EQP_ID',['eqpid_b']],
+        }
+    ],
+}
 
 
-print(df)
-
-for col in df.columns:
-    res = pd.core.dtypes.common._get_dtype_type(df[col])
-    print(res)
-
-res = df['D'].dtype == pd.datetime64[ns]
-
-print(res)
+for key, val in condition.items():
+    if key == 'and':
+        for val2 in val:
+            for key2, val2 in val2.items():
+                print('{0} - {1}'.format(key2, val2))
