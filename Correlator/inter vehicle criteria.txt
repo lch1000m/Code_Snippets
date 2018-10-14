@@ -1,0 +1,2 @@
+step_desc	KNGF	KNGN	KNGG
+9.5 esige	kz900	kz901	kz902
