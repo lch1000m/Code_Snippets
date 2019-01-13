@@ -1,3 +1,0 @@
-step	PPID1	PPID2
-A	rcp_A_1	
-B	rcp_B_1	rcp_B_2

@@ -1,5 +1,0 @@
-step	lot_wf	CHB	ppid
-eSiGe 성장	A	3	A
-eSiGe 성장	A	5	A
-eSD 성장	B	3	A
-eSD 성장	B	7	A

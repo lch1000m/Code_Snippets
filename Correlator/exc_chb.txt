@@ -1,5 +1,0 @@
-step	CHB
-eSiGe 성장	3
-eSiGe 성장	4
-eSD 성장	3
-eSD 성장	4

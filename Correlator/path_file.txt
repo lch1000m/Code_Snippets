@@ -1,9 +1,0 @@
-step	lot_wf	ppid	eqp	chb	layerid	module	unit
-kz000	A	a	a	1	7.6	pc	cln
-kz000	B	a	a	2	7.6	pc	cln
-kz000	C	a	b	1	7.6	pc	cln
-kz000	D	b	b	2	7.6	pc	cln
-kz001	A	c	c	1	9.4	sd	etch
-kz001	B	d	d	1	9.4	sd	etch
-kz001	C	d	c	1	9.4	sd	etch
-kz001	D	d	d	2	9.4	sd	etch

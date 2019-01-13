@@ -8,3 +8,4 @@ Pandas/sample.txt
 __pycache__/example.cpython-36.pyc
 *.log
 *.pyc
+*.txt
