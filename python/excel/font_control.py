@@ -9,7 +9,7 @@ import xlwt
 filepath = r'C:\Codes\Snippets\sample data\output.xlsx'
 
 book = Workbook()
-sheet1 = book.add_sheet('fonr')
+sheet1 = book.add_sheet('font')
 # book.add_sheet('Sheet 2')
 
 xlwt.add_palette_colour("custom_colour", 0x21)

@@ -1,14 +1,28 @@
 # test script for partial
 
-from functools import partial
+import numpy as np
 
 
-def add(x=1, y=10):
-    return x+y
+def round_half_digit(res):
+
+    n, rem = divmod(res, 1)
+
+    if rem >= 0.75:
+        res = n + 1
+    elif rem >= 0.25:
+        res = n + 0.5
+    else:
+        res = n
+
+    return res
 
 
-add2 = partial(add, y=2)
 
-result = add2(x=3)
+if __name__ == '__main__':
 
-print(result)
+    inp = np.linspace(10, 12, num=11)
+
+    for it in inp:
+        res = round_half_digit(it)
+
+        print('{0} - {1}'.format(it, res))
